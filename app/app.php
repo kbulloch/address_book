@@ -15,8 +15,10 @@
 
     //home page route
     $app->get("/", function() use ($app) {
+
         //render the home page
         return $app['twig']->render('address_book_template.php', array('contacts' => Contact::getAll()));
+
     });
 
     //create a new contact route
