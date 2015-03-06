@@ -4,8 +4,8 @@
 
     //session_start
     session_start();
-    if(empty($_SESSION['contact_list'])) {
-        $_SESSION['contact_list'] = array();
+    if(empty($_SESSION['list_of_contacts'])) {
+        $_SESSION['list_of_contacts'] = array();
     }
 
     //new silex object
@@ -15,12 +15,12 @@
         'twig.path' => __DIR__.'/../views'
     ));
 
-    $app->get("/", function use ($app) {
-        return $app['twig']->render('address_book_template.twig', array('contacts' => Contact::getAll()));
+    $app->get("/", function() use ($app) {
+        return $app['twig']->render('address_book_template.php', array('contacts' => Contact::getAll()));
     });
 
     $app->post("/create_contact", function() use ($app) {
-        //return twig render
+        return $app['twig']->render('create_contact.php');
     });
 
     $app->post("/search_contacts", function() use ($app) {
