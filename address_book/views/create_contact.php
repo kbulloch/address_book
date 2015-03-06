@@ -6,6 +6,11 @@
 <body>
     <div class="container">
         <h2>You created a new contact! Wow. Good job.</h2>
+        <p>{{ newcontact.getLastName }}, {{ newcontact.getFirstName }}</p>
+        <ul>
+            <li>{{ newcontact.getPhoneNumber }}</li>
+            <li>{{ newcontact.getAddress }}</li>
+        </ul>
     </div>
 </body>
 </html>
