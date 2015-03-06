@@ -13,11 +13,13 @@
         'twig.path' => __DIR__.'/../views'
     ));
 
+    //home page route
     $app->get("/", function() use ($app) {
         //render the home page
         return $app['twig']->render('address_book_template.php', array('contacts' => Contact::getAll()));
     });
 
+    //create a new contact route
     $app->post("/create_contact", function() use ($app) {
 
         //create a new contact based on user input
@@ -29,6 +31,7 @@
 
     });
 
+    //search in contacts route
     $app->post("/search_contacts", function() use ($app) {
 
         //get user search input
@@ -47,6 +50,7 @@
 
     });
 
+    //delete all cotacts route
     $app->post("/delete_all", function() use ($app) {
 
         //delete all contacts
