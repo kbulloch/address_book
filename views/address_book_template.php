@@ -55,6 +55,7 @@
                     <button type="submit" class="btn btn-warning">Clear contact list</button>
                 </div>
             </form>
+            
         {% endif %}
     </div>
 </body>
