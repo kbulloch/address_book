@@ -28,6 +28,15 @@
             </form>
 
         {% if contacts is not empty %}
+
+            <h3>Search within your contacts</h3>
+            <form action="/search_contacts" method="post">
+                <div class="form-group">
+                    <label for="last_name_query">Last name</label>
+                    <input id="last_name_query" name="last_name_query" class="form-control" type="text">
+                </div>
+            </form>
+
             <h3>Your contacts</h3>
             <ul>
             {% for contact in contacts %}
