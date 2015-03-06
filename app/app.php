@@ -32,14 +32,12 @@
     $app->post("/search_contacts", function() use ($app) {
 
         //get user search input
-        $last_name_query = strtoupper($_POST['last_name_query']);
-        //also add first name searching
-
-        $matching_contacts = array();
+        $name_query = strtoupper($_POST['name_query']);
 
         //send matching contacts to new array
+        $matching_contacts = array();
         foreach ($_SESSION['list_of_contacts'] as $a_contact) {
-            if (strtoupper($a_contact->getLastName()) == $last_name_query) {
+            if (strtoupper($a_contact->getLastName()) == $name_query || strtoupper($a_contact->getFirstName()) == $name_query) {
                 array_push($matching_contacts, $a_contact);
             }
         }

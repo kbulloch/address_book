@@ -36,8 +36,8 @@
             <h3>Search within your contacts</h3>
             <form action="/search_contacts" method="post">
                 <div class="form-group">
-                    <label for="last_name_query">Last name</label>
-                    <input id="last_name_query" name="last_name_query" class="form-control" type="text">
+                    <label for="name_query">Enter first or last name</label>
+                    <input id="name_query" name="name_query" class="form-control" type="text">
                 </div>
                 <button type="submit" class="btn btn-info">Search</button>
             </form>
