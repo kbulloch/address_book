@@ -6,7 +6,7 @@
 <body>
     <div class="container">
         <h1>Your Address Book</h1>
-        <h2>Create a new contact</h2>
+        <h3>Create a new contact</h3>
             <form action="/create_contact" method="post">
                 <div class="form-group">
                     <label for="first_name">First name</label>

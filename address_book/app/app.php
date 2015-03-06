@@ -20,7 +20,12 @@
     });
 
     $app->post("/create_contact", function() use ($app) {
-        return $app['twig']->render('create_contact.php');
+
+        $contact = new Contact($_POST['first_name'], $_POST['last_name'], $_POST['phone_number'], $_POST['address']);
+        $contact->save();
+
+        return $app['twig']->render('create_contact.php', array('newcontact', => $contact));
+
     });
 
     $app->post("/search_contacts", function() use ($app) {
