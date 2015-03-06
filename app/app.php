@@ -36,9 +36,9 @@
 
         //send matching contacts to new array
         $matching_contacts = array();
-        foreach ($_SESSION['list_of_contacts'] as $a_contact) {
-            if (strtoupper($a_contact->getLastName()) == $name_query || strtoupper($a_contact->getFirstName()) == $name_query) {
-                array_push($matching_contacts, $a_contact);
+        foreach ($_SESSION['list_of_contacts'] as $searched_contact) {
+            if (strtoupper($searched_contact->getLastName()) == $name_query || strtoupper($searched_contact->getFirstName()) == $name_query) {
+                array_push($matching_contacts, $searched_contact);
             }
         }
 
