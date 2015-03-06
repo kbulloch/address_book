@@ -11,6 +11,7 @@
             <li>{{ newcontact.getPhoneNumber }}</li>
             <li>{{ newcontact.getAddress }}</li>
         </ul>
+        <p><a href="/">Home</a></p>
     </div>
 </body>
 </html>

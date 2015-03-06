@@ -26,6 +26,25 @@
                 </div>
                 <button type="submit" class="btn btn-success">Create</button>
             </form>
+
+        {% if contacts is not empty %}
+            <h3>Your contacts</h3>
+            <ul>
+            {% for contact in contacts %}
+                <li>{{ contact.getLastName }}, {{ contact.getFirstName }}</li>
+                <ul>
+                    <li>{{ contact.getPhoneNumber }}</li>
+                    <li>{{ contact.getAddress }}</li>
+                </ul>
+            {% endfor %}
+            </ul>
+        {% endif %}
+
+        <form action="/delete_all" method="post">
+            <div class="form-group">
+                <button type="submit" class="btn btn-warning">Clear contact list</button>
+            </div>
+        </form>
     </div>
 </body>
 </html>

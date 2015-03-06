@@ -16,7 +16,9 @@
     ));
 
     $app->get("/", function() use ($app) {
+
         return $app['twig']->render('address_book_template.php', array('contacts' => Contact::getAll()));
+
     });
 
     $app->post("/create_contact", function() use ($app) {
@@ -30,6 +32,13 @@
 
     $app->post("/search_contacts", function() use ($app) {
         //return twig render
+    });
+
+    $app->post("/delete_all", function() use ($app) {
+
+        Contact::deleteAll();
+        return $app['twig']->render('delete_all.php');
+
     });
 
     return $app;
