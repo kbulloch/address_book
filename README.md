@@ -25,7 +25,7 @@ localhost:8000
 
 You can now create and view contacts!
 
-----------
+---------
 
 The MIT License (MIT)
 
