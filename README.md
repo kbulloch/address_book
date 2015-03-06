@@ -9,7 +9,7 @@ delete all contacts in the address book.
 ---------
 Setup:
 
-1. Navigate to an appropriate directory then run the following commands in
+1) Navigate to an appropriate directory then run the following commands in
 your terminal:
 
 git clone https://github.com/kbulloch/address_book.git
@@ -18,7 +18,7 @@ cd address_book/web
 
 php -S localhost:8000
 
-2. Then in your browser enter this URL:
+2) Then in your browser enter this URL:
 
 localhost:8000
 
