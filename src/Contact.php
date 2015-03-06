@@ -58,12 +58,13 @@
             return $this->address;
         }
 
-        //static methods
+        //save
         function save()
         {
             array_push($_SESSION['list_of_contacts'], $this);
         }
 
+        //static methods
         static function getAll()
         {
             return $_SESSION['list_of_contacts'];
