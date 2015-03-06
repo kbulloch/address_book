@@ -30,9 +30,9 @@
 
     });
 
-    $app->post("/search_contacts", function() use ($app) {
-        //return twig render
-    });
+    // $app->post("/search_contacts", function() use ($app) {
+    //     //return twig render
+    // });
 
     $app->post("/delete_all", function() use ($app) {
 

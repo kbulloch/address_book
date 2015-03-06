@@ -38,13 +38,14 @@
                 </ul>
             {% endfor %}
             </ul>
-        {% endif %}
+            <br>
 
-        <form action="/delete_all" method="post">
-            <div class="form-group">
-                <button type="submit" class="btn btn-warning">Clear contact list</button>
-            </div>
-        </form>
+            <form action="/delete_all" method="post">
+                <div class="form-group">
+                    <button type="submit" class="btn btn-warning">Clear contact list</button>
+                </div>
+            </form>
+        {% endif %}
     </div>
 </body>
 </html>

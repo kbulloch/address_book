@@ -59,7 +59,6 @@
         }
 
         //static methods
-            //save, getAll, deleteAll
         function save()
         {
             array_push($_SESSION['list_of_contacts'], $this);
