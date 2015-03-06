@@ -3,8 +3,8 @@
 Address Book app
 
 Application to create an address book.  User has ability to create a new
-contact with name, phone number and address.  User has ability to
-delete all contacts in the address book.
+contact with name, phone number and address; delete all contacts in the address
+book; search contacts by last name.
 
 ---------
 Setup:
