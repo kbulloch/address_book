@@ -7,7 +7,8 @@ contact with name, phone number and address; delete all contacts in the address
 book; search contacts by last name.
 
 ---------
-Setup:
+
+SETUP
 
 1) Navigate to an appropriate directory then run the following commands in
 your terminal:

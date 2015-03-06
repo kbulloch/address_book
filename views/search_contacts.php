@@ -6,6 +6,9 @@
 <body>
     <div class="container">
         <h1>Search Results</h1>
+        {% if matching_contacts is empty %}
+            <h4>No contacts matched your search</h4>
+        {% endif %}
         {% for contact in matching_contacts %}
             <ul>
                 <li>{{ contact.getLastName }}, {{ contact.getFirstName }}</li>
