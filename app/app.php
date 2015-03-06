@@ -44,7 +44,7 @@
         //output to new array with matching contacts
         //send matching_contacts array to search_contacts.php
 
-        return $app['twig']->render('search_contacts.php', array('matching_contacts' => $matching_contacts))
+        return $app['twig']->render('search_contacts.php', array('matching_contacts' => $matching_contacts));
     });
 
     $app->post("/delete_all", function() use ($app) {

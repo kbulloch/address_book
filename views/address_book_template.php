@@ -35,6 +35,7 @@
                     <label for="last_name_query">Last name</label>
                     <input id="last_name_query" name="last_name_query" class="form-control" type="text">
                 </div>
+                <button type="submit" class="btn btn-info">Search</button>
             </form>
 
             <h3>Your contacts</h3>
