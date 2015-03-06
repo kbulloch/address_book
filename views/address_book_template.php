@@ -27,6 +27,10 @@
                 <button type="submit" class="btn btn-success">Create</button>
             </form>
 
+        {% if contacts is empty %}
+            <h4>Your address book is currently empty.  Add a contact!</h4>
+        {% endif %}
+
         {% if contacts is not empty %}
 
             <h3>Search within your contacts</h3>
@@ -55,7 +59,7 @@
                     <button type="submit" class="btn btn-warning">Clear contact list</button>
                 </div>
             </form>
-            
+
         {% endif %}
     </div>
 </body>
