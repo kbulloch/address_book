@@ -1,6 +1,8 @@
+#Address Book app
+
 03.06.2015
 
-Address Book app
+###Description
 
 Application to create an address book.  User has ability to create a new
 contact with name, phone number and address; delete all contacts in the address
@@ -8,24 +10,24 @@ book; search contacts by last name.
 
 ---------
 
-SETUP
+###Setup
 
 1) Navigate to an appropriate directory then run the following commands in
 your terminal:
-
+```
 git clone https://github.com/kbulloch/address_book.git
 
 cd address_book/web
 
 php -S localhost:8000
-
+```
 2) Then in your browser enter this URL:
 
 localhost:8000
 
 You can now create and view contacts!
 
----------
+###Legal
 
 The MIT License (MIT)
 
